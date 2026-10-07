@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Outil – réponses acceptées du Zarlor</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 18px; color: #1D2A1B; background: #FFFDF6; line-height: 1.5; }
+  h1 { color: #2E5A27; font-size: 24px; }
+  label { display: block; font-weight: 700; margin-top: 18px; }
+  input, textarea { width: 100%; font: inherit; padding: 10px 12px; border: 2px solid #2E5A27; border-radius: 10px; box-sizing: border-box; }
+  textarea { min-height: 70px; }
+  button { margin-top: 10px; font: inherit; font-weight: 700; padding: 10px 16px; border: 0; border-radius: 10px; background: #2E5A27; color: #FFDE59; cursor: pointer; }
+  .note { color: #55624F; font-size: 15px; }
+</style>
+</head>
+<body>
+<h1>Réponses acceptées : outil de codage</h1>
+<p class="note">Dans <code>zarlor.json</code>, les réponses acceptées sont codées pour qu'un joueur curieux ne puisse pas les lire. Cet outil sert à coder une nouvelle réponse, ou à relire une réponse codée.</p>
+
+<label for="clair">1. Tapez une réponse à accepter (ex. Pois sabre)</label>
+<input id="clair" type="text">
+<button type="button" id="coder">Coder</button>
+<label for="code">Résultat à copier dans « reponses_codees », entre guillemets :</label>
+<textarea id="code" readonly></textarea>
+
+<label for="code2">2. Relire une réponse codée (collez le code, sans les guillemets)</label>
+<input id="code2" type="text">
+<button type="button" id="decoder">Décoder</button>
+<label for="clair2">Réponse en clair :</label>
+<input id="clair2" type="text" readonly>
+
+<script>
+  document.getElementById('coder').onclick = () => {
+    const v = document.getElementById('clair').value.trim();
+    document.getElementById('code').value = v ? btoa(unescape(encodeURIComponent(v))) : '';
+  };
+  document.getElementById('decoder').onclick = () => {
+    try { document.getElementById('clair2').value = decodeURIComponent(escape(atob(document.getElementById('code2').value.trim().replace(/"/g, '')))); }
+    catch (e) { document.getElementById('clair2').value = 'Code illisible : vérifiez le copier-coller.'; }
+  };
+</script>
+</body>
+</html>
