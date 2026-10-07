@@ -299,35 +299,20 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .score-perime { margin: 12px 0 0; font-weight: 700; color: var(--danger); }
 .aide { color: var(--doux); margin: 16px 0 0; }
 
-/* ===== Scanner ===== */
-.scanner, .modale {
+/* ===== Fenêtre de confirmation ===== */
+.modale {
   position: fixed; inset: 0; z-index: 50;
   background: rgba(20, 32, 18, .82);
   display: flex; align-items: center; justify-content: center;
   padding: calc(env(safe-area-inset-top, 0px) + 12px) 12px calc(env(safe-area-inset-bottom, 0px) + 12px);
 }
-.scanner-boite, .modale-boite {
+.modale-boite {
   width: 100%; max-width: 420px;
   max-height: 100%; overflow-y: auto;
   background: var(--fond);
   border-radius: var(--rayon);
   padding: 16px;
 }
-.scanner-haut { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-.scanner-haut h2 { margin: 0; font-size: 20px; color: var(--vert-fonce); }
-.btn-fermer {
-  width: 44px; height: 44px; border-radius: 50%;
-  border: 2px solid var(--bord); background: var(--blanc);
-  font-size: 18px; font-weight: 800; cursor: pointer;
-}
-#lecteur { width: 100%; min-height: 200px; border-radius: 12px; overflow: hidden; background: #000; }
-#lecteur video { display: block; width: 100% !important; height: auto !important; }
-.scanner-message { min-height: 1.5em; margin: 10px 0; font-weight: 700; color: var(--vert-fonce); }
-.scanner-message.erreur { color: var(--danger); }
-.code-secours label { display: block; font-size: 15px; color: var(--doux); margin-bottom: 8px; }
-.code-ligne { display: flex; gap: 8px; }
-.champ-code { text-transform: uppercase; letter-spacing: .2em; font-weight: 800; text-align: center; }
-
 .modale-boite p { font-size: 18px; font-weight: 600; margin: 4px 0 6px; }
 .modale-boutons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .modale-boutons .btn { font-size: 16px; }
@@ -346,7 +331,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 /* ===== Navigation du bas ===== */
 .nav-bas {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(2, 1fr);
   height: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px));
   padding-bottom: env(safe-area-inset-bottom, 0px);
   background: var(--blanc);
