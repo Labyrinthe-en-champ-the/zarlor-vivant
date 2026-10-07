@@ -11,7 +11,7 @@
     fr: {
       challenge: 'Challenge', tous_jeux: 'Tous les jeux',
       mes_pancartes: 'Mes 17 pancartes', trouvees: 'fiches lues', repondues: 'réponses',
-      scanner_pancarte: 'Scanner une pancarte', scanner_autre: 'Scanner une autre pancarte',
+      suivante: 'Pancarte suivante',
       a_decouvrir: 'À découvrir', repondu: '✓ Répondu', a_repondre: 'À répondre',
       lire_pancarte: n => `Lisez bien la pancarte n°${n} dans le labyrinthe : c'est elle qui vous mettra sur la piste.`,
       pancarte_n: 'Pancarte n°', retour: 'Mes pancartes', habitat: 'Mon habitat', indice: "L'indice",
@@ -19,18 +19,8 @@
       modifier: 'Modifier mes réponses', nouvelle: 'Nouvelle partie',
       aide_resultat: 'Validez quand vous voulez : vous verrez votre note sur 17, et vous pourrez encore corriger vos réponses puis revalider.',
       score_perime: 'Vous avez modifié des réponses depuis : revalidez pour mettre la note à jour.',
-      nav_parcours: 'Parcours', nav_scanner: 'Scanner', nav_resultat: 'Résultat',
-      scanner_titre: 'Scanner une pancarte',
-      code_label: 'Le scan ne marche pas ? Tapez le code à 4 caractères écrit sous le QR code :',
-      ok: 'OK', oui: 'Oui', annuler: 'Annuler',
-      camera_demarrage: 'Ouverture de la caméra…',
-      camera_vise: 'Visez le QR code de la pancarte.',
-      camera_erreur: "Impossible d'ouvrir la caméra. Autorisez son accès dans les réglages, ou tapez le code écrit sous le QR code.",
-      qr_inconnu: 'Ce QR code ne fait pas partie des jeux du Labyrinthe.',
-      code_inconnu: 'Code inconnu. Vérifiez les 4 caractères écrits sous le QR code.',
-      vers_challenge: 'Pancarte du Challenge des Experts : ouverture du Challenge…',
-      nouvelle_trouvee: 'Nouvelle pancarte ajoutée à votre carnet !',
-      deja_trouvee: 'Pancarte déjà dans votre carnet.',
+      nav_parcours: 'Parcours', nav_resultat: 'Résultat',
+      oui: 'Oui', annuler: 'Annuler',
       reponse_vide: "Tapez d'abord un nom d'espèce.",
       confirmer_manque: n => `Il vous reste ${n} question${n > 1 ? 's' : ''} sans réponse. Valider quand même ?`,
       confirmer_nouvelle: 'Effacer toute votre progression et recommencer une nouvelle partie ?',
@@ -40,7 +30,7 @@
     en: {
       challenge: 'Challenge', tous_jeux: 'All games',
       mes_pancartes: 'My 17 signs', trouvees: 'signs read', repondues: 'answered',
-      scanner_pancarte: 'Scan a sign', scanner_autre: 'Scan another sign',
+      suivante: 'Next sign',
       a_decouvrir: 'Still to find', repondu: '✓ Answered', a_repondre: 'To answer',
       lire_pancarte: n => `Read sign no. ${n} carefully.`,
       pancarte_n: 'Sign no. ', retour: 'My signs', habitat: 'My habitat', indice: 'The clue',
@@ -48,18 +38,8 @@
       modifier: 'Change my answers', nouvelle: 'New game',
       aide_resultat: 'Submit whenever you like: you will see your score out of 17, and you can still change your answers and submit again.',
       score_perime: 'You have changed some answers since: submit again to update your score.',
-      nav_parcours: 'Trail', nav_scanner: 'Scan', nav_resultat: 'Result',
-      scanner_titre: 'Scan a sign',
-      code_label: 'Scan not working? Type the 4-character code written under the QR code:',
-      ok: 'OK', oui: 'Yes', annuler: 'Cancel',
-      camera_demarrage: 'Opening the camera…',
-      camera_vise: "Point at the sign's QR code.",
-      camera_erreur: 'The camera could not be opened. Allow camera access in your settings, or type the code written under the QR code.',
-      qr_inconnu: "This QR code isn't part of the Labyrinth games.",
-      code_inconnu: 'Unknown code. Check the 4 characters written under the QR code.',
-      vers_challenge: 'Challenge des Experts sign: opening the Challenge…',
-      nouvelle_trouvee: 'New sign added to your notebook!',
-      deja_trouvee: 'This sign is already in your notebook.',
+      nav_parcours: 'Trail', nav_resultat: 'Result',
+      oui: 'Yes', annuler: 'Cancel',
       reponse_vide: 'Type the name of a species first.',
       confirmer_manque: n => `You still have ${n} unanswered question${n > 1 ? 's' : ''}. Submit anyway?`,
       confirmer_nouvelle: 'Erase all your progress and start a new game?',
@@ -109,7 +89,6 @@
   let DATA = null;
   let especes = [];
   const parNumero = n => especes.find(e => e.numero === n);
-  const parCode = c => especes.find(e => e.code === String(c || '').trim().toUpperCase());
 
   /* ---------- Comparaison tolérante des réponses ---------- */
   function normaliser(s) {
@@ -296,81 +275,6 @@
     }
   }
 
-  /* ---------- Ouverture d'une pancarte ---------- */
-  function ouvrirPancarte(code) {
-    const e = parCode(code);
-    if (!e) return false;
-    etat.commence = true;
-    sauver();
-    rendreFiche(e.numero);
-    return true;
-  }
-
-  /* ---------- Scanner ---------- */
-  let lecteur = null;
-  function messageScanner(txt, erreur) {
-    const el = $('scanner-message');
-    el.textContent = txt;
-    el.classList.toggle('erreur', !!erreur);
-  }
-  async function ouvrirScanner() {
-    $('scanner').hidden = false;
-    $('champ-code').value = '';
-    messageScanner(t('camera_demarrage'));
-    if (typeof Html5Qrcode === 'undefined') { messageScanner(t('camera_erreur'), true); return; }
-    try {
-      lecteur = lecteur || new Html5Qrcode('lecteur', { verbose: false });
-      await lecteur.start(
-        { facingMode: 'environment' },
-        { fps: 10, qrbox: (w, h) => { const c = Math.floor(Math.min(w, h) * 0.75); return { width: c, height: c }; } },
-        texte => traiterScan(texte),
-        () => {}
-      );
-      messageScanner(t('camera_vise'));
-    } catch (err) {
-      messageScanner(t('camera_erreur'), true);
-    }
-  }
-  async function fermerScanner() {
-    $('scanner').hidden = true;
-    if (lecteur) {
-      try { if (lecteur.isScanning) await lecteur.stop(); } catch (e) {}
-    }
-  }
-  let scanEnCours = false;
-  async function traiterScan(texte) {
-    if (scanEnCours) return;
-    scanEnCours = true;
-    try {
-      const brut = String(texte || '').trim();
-      let url = null;
-      try { url = new URL(brut); } catch (e) {}
-
-      // QR du Challenge des Experts : on ouvre le Challenge dans la langue du joueur
-      if (url && url.pathname.includes('/challenge-des-experts')) {
-        messageScanner(t('vers_challenge'));
-        url.searchParams.set('lang', langue);
-        await fermerScanner();
-        location.href = url.toString();
-        return;
-      }
-      // QR du Zarlor
-      let code = null;
-      if (url && url.pathname.includes('/zarlor-vivant')) code = url.searchParams.get('espece');
-      else if (!url && /^[A-Za-z0-9]{4}$/.test(brut)) code = brut;
-
-      if (code && parCode(code)) {
-        await fermerScanner();
-        ouvrirPancarte(code);
-      } else {
-        messageScanner(t('qr_inconnu'), true);
-        if (navigator.vibrate) navigator.vibrate(120);
-      }
-    } finally {
-      setTimeout(() => { scanEnCours = false; }, 1200);
-    }
-  }
-
   /* ---------- Validation ---------- */
   async function valider() {
     const manque = 17 - nbReponses();
@@ -391,8 +295,7 @@
     });
     $('btn-logo').addEventListener('click', () => montrer(etat.commence ? 'parcours' : 'accueil'));
     $('btn-commencer').addEventListener('click', () => { etat.commence = true; sauver(); montrer('parcours'); });
-    $('btn-scanner-parcours').addEventListener('click', ouvrirScanner);
-    $('btn-scanner-fiche').addEventListener('click', ouvrirScanner);
+    $('btn-suivante').addEventListener('click', () => rendreFiche(ficheCourante >= 17 ? 1 : ficheCourante + 1));
     $('btn-retour-parcours').addEventListener('click', () => montrer('parcours'));
     $('liste-pancartes').addEventListener('click', ev => {
       const b = ev.target.closest('button[data-numero]');
@@ -401,16 +304,7 @@
     $('btn-enregistrer').addEventListener('click', enregistrer);
     $('champ-reponse').addEventListener('keydown', ev => { if (ev.key === 'Enter') { ev.preventDefault(); enregistrer(); } });
 
-    document.querySelectorAll('.nav-item').forEach(b => b.addEventListener('click', () => {
-      if (b.dataset.nav === 'scanner') ouvrirScanner(); else montrer(b.dataset.nav);
-    }));
-    $('btn-fermer-scanner').addEventListener('click', fermerScanner);
-    $('form-code').addEventListener('submit', ev => {
-      ev.preventDefault();
-      const code = $('champ-code').value.trim().toUpperCase();
-      if (parCode(code)) { fermerScanner(); ouvrirPancarte(code); }
-      else messageScanner(t('code_inconnu'), true);
-    });
+    document.querySelectorAll('.nav-item').forEach(b => b.addEventListener('click', () => montrer(b.dataset.nav)));
     $('btn-valider').addEventListener('click', valider);
     $('btn-modifier').addEventListener('click', () => montrer('parcours'));
     $('btn-nouvelle').addEventListener('click', async () => {
@@ -418,9 +312,6 @@
       etat = etatVide();
       sauver();
       montrer('accueil');
-    });
-    document.addEventListener('keydown', ev => {
-      if (ev.key === 'Escape' && !$('scanner').hidden) fermerScanner();
     });
   }
 
@@ -455,18 +346,11 @@
     // On ne garde que les pancartes qui existent encore dans les données
     etat.trouvees = etat.trouvees.filter(n => parNumero(n));
 
-    const params = new URLSearchParams(location.search);
-    const code = params.get('espece');
-    // Adresse propre (sans le code) pour éviter de rouvrir la même fiche en rechargeant
-    if (code || params.has('lang')) history.replaceState(null, '', location.pathname);
+    // Adresse propre (sans ?lang=) une fois la langue appliquée
+    if (location.search) history.replaceState(null, '', location.pathname);
 
     appliquerLangue();
-    if (code && ouvrirPancarte(code)) {
-      // fiche ouverte
-    } else {
-      if (code) toast(t('code_inconnu'));
-      montrer(etat.commence ? 'parcours' : 'accueil');
-    }
+    montrer(etat.commence ? 'parcours' : 'accueil');
   }
 
   /* ---------- Mode hors ligne ---------- */
