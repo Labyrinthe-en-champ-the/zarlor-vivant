@@ -6,7 +6,6 @@
      et une copie est gardée sur le téléphone.
    - Sans réseau (ou réseau trop lent, plus de 4 secondes) : la copie
      gardée sur le téléphone est utilisée.
-   Les adresses des QR codes (?espece=…) ne changent pas.
    Si vous modifiez un fichier du jeu : rien à faire, la nouvelle version
    est récupérée automatiquement dès qu'il y a du réseau.
    ===================================================================== */
@@ -16,11 +15,10 @@ const DOSSIER = new URL('./', self.location).pathname;   // ex. /challenge-des-e
 const FICHIERS = [
   './',
   './style.css',
-  './style.css?v=3',
+  './style.css?v=4',
   './app.js',
-  './app.js?v=3',
+  './app.js?v=4',
   './zarlor.json',
-  './html5-qrcode.min.js',
   './logo-zarlor.png',
   './chewy.woff2',
   './plus-jakarta-sans.woff2'
