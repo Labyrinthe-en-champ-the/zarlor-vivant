@@ -1,6 +1,22 @@
 {
   "_lisez_moi": "Textes du jeu Le Zarlor Vivant. Modifiez uniquement le texte entre guillemets. Les réponses acceptées sont codées : utilisez outil-reponses.html pour en ajouter.",
   "version": 1,
+  "ouverture": {
+    "_mode_emploi": "Mettez disponible à true le jour du lancement. Tant que c'est false, le jeu affiche « Bientôt disponible » (aperçu possible avec ?apercu=1).",
+    "disponible": false,
+    "fr": {
+      "badge": "Bientôt disponible",
+      "titre": "Bientôt disponible !",
+      "texte": "Le Zarlor Vivant ouvre très bientôt ses pancartes. En attendant, partez à l'aventure avec le Challenge des Experts !",
+      "bouton": "Jouer au Challenge des Experts"
+    },
+    "en": {
+      "badge": "Coming soon",
+      "titre": "Coming soon!",
+      "texte": "Le Zarlor Vivant will open its signs very soon. In the meantime, set off on an adventure with the Challenge des Experts!",
+      "bouton": "Play the Challenge des Experts"
+    }
+  },
   "textes": {
     "fr": {
       "titre": "Le Zarlor Vivant",
