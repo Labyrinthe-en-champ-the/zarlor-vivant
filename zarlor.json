@@ -5,7 +5,7 @@
     "fr": {
       "titre": "Le Zarlor Vivant",
       "intro": "Les grands naturalistes arpentaient La Réunion pour cartographier ses trésors naturels. Aujourd'hui, c'est à votre tour !",
-      "consigne": "Promenez-vous dans le labyrinthe et retrouvez les 17 pancartes, dans l'ordre de votre choix. Devant une pancarte, touchez son numéro dans le jeu (ou scannez son QR code), lisez la fiche, puis trouvez quelle espèce se cache derrière l'indice.",
+      "consigne": "Promenez-vous dans le labyrinthe et retrouvez les 17 pancartes numérotées, dans l'ordre de votre choix. Devant une pancarte, touchez son numéro dans le jeu, lisez bien la pancarte, puis trouvez quelle espèce se cache derrière l'indice.",
       "commencer": "Commencer l'exploration",
       "question": "Quelle espèce se cache derrière cet indice ?",
       "placeholder": "Tapez le nom de l'espèce",
@@ -38,7 +38,7 @@
     "en": {
       "titre": "Le Zarlor Vivant",
       "intro": "The great naturalists once roamed Réunion Island to map its natural treasures. Today, it's your turn!",
-      "consigne": "Stroll through the labyrinth and find the 17 signs, in any order. At each sign, tap its number in the game (or scan its QR code), read the fact sheet, then work out which species the clue describes.",
+      "consigne": "Stroll through the labyrinth and find the 17 numbered signs, in any order. At each sign, tap its number in the game, read the English fact sheet, then work out which species the clue describes.",
       "commencer": "Start exploring",
       "question": "Which species does this clue describe?",
       "placeholder": "Type the name of the species",
