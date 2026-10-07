@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2E5A27">
   <title>Le Zarlor Vivant – Labyrinthe En Champ-Thé</title>
   <link rel="icon" href="logo-zarlor.png">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -43,7 +43,6 @@
           <div class="compteur"><strong id="nb-reponses">0</strong><span>/17</span><small data-i="repondues">réponses</small></div>
         </div>
         <div class="barre-progression" aria-hidden="true"><div id="barre-remplie"></div></div>
-        <button class="btn btn-secondaire" type="button" id="btn-scanner-parcours">📷 <span data-i="scanner_pancarte">Scanner une pancarte</span></button>
       </div>
       <ol class="liste-pancartes" id="liste-pancartes"></ol>
     </section>
@@ -84,7 +83,7 @@
         <p class="message-ok" id="message-enregistre" role="status" hidden></p>
       </div>
 
-      <button class="btn btn-secondaire" type="button" id="btn-scanner-fiche">📷 <span data-i="scanner_autre">Scanner une autre pancarte</span></button>
+      <button class="btn btn-secondaire" type="button" id="btn-suivante"><span data-i="suivante">Pancarte suivante</span> →</button>
     </section>
 
     <!-- ===== 4. RÉSULTAT ===== -->
@@ -113,25 +112,6 @@
     </section>
   </main>
 
-  <!-- ===== SCANNER ===== -->
-  <div class="scanner" id="scanner" hidden role="dialog" aria-modal="true" aria-labelledby="scanner-titre">
-    <div class="scanner-boite">
-      <div class="scanner-haut">
-        <h2 id="scanner-titre" data-i="scanner_titre">Scanner une pancarte</h2>
-        <button class="btn-fermer" type="button" id="btn-fermer-scanner" aria-label="Fermer">✕</button>
-      </div>
-      <div id="lecteur"></div>
-      <p class="scanner-message" id="scanner-message" role="status"></p>
-      <form class="code-secours" id="form-code" autocomplete="off">
-        <label for="champ-code" data-i="code_label">Le scan ne marche pas ? Tapez le code à 4 caractères écrit sous le QR code&nbsp;:</label>
-        <div class="code-ligne">
-          <input class="champ champ-code" id="champ-code" type="text" maxlength="4" autocapitalize="characters" spellcheck="false" inputmode="text" placeholder="ex. AB3C">
-          <button class="btn btn-principal btn-court" type="submit" data-i="ok">OK</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
   <!-- ===== CONFIRMATION ===== -->
   <div class="modale" id="modale" hidden role="dialog" aria-modal="true" aria-labelledby="modale-texte">
     <div class="modale-boite">
@@ -151,17 +131,12 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
       <span data-i="nav_parcours">Parcours</span>
     </button>
-    <button class="nav-item" type="button" data-nav="scanner">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4zM7 7h10v10H7z"/></svg>
-      <span data-i="nav_scanner">Scanner</span>
-    </button>
     <button class="nav-item" type="button" data-nav="resultat">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg>
       <span data-i="nav_resultat">Résultat</span>
     </button>
   </nav>
 
-  <script src="html5-qrcode.min.js"></script>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
