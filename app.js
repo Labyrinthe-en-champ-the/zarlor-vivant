@@ -330,6 +330,26 @@
     $('champ-reponse').blur();
   }
 
+  /* ---------- Avant l'ouverture : « Bientôt disponible » ---------- */
+  function jeuFerme() {
+    const o = DATA && DATA.ouverture;
+    if (!o || o.disponible !== false) return false;
+    try { if (sessionStorage.getItem('zarlor_apercu') === '1') return false; } catch (e) {}
+    return true;
+  }
+  function afficherBientot() {
+    const o = DATA.ouverture[langue] || DATA.ouverture.fr;
+    $('nav-bas').hidden = true;
+    $('contenu').innerHTML = `<section class="ecran"><div class="accueil">
+      <img class="accueil-logo" src="logo-zarlor.png" alt="Le Zarlor Vivant" width="309" height="352">
+      <h1 class="titre-ecran" style="text-align:center">${echapper(o.titre)}</h1>
+      <p class="accueil-consigne">${echapper(o.texte)}</p>
+      <a class="btn btn-principal" style="text-decoration:none" href="/challenge-des-experts/?lang=${langue}">🎯 ${echapper(o.bouton)}</a>
+    </div></section>`;
+    // Le bouton FR/EN reste utilisable
+    $('btn-langue').onclick = () => setTimeout(afficherBientot, 0);
+  }
+
   /* ---------- Démarrage ---------- */
   async function demarrer() {
     charger();
@@ -346,8 +366,14 @@
     // On ne garde que les pancartes qui existent encore dans les données
     etat.trouvees = etat.trouvees.filter(n => parNumero(n));
 
+    // Aperçu secret avant l'ouverture : ?apercu=1 (mémorisé pendant la session)
+    try {
+      if (new URLSearchParams(location.search).get('apercu') === '1') sessionStorage.setItem('zarlor_apercu', '1');
+    } catch (e) {}
     // Adresse propre (sans ?lang=) une fois la langue appliquée
     if (location.search) history.replaceState(null, '', location.pathname);
+
+    if (jeuFerme()) { afficherBientot(); return; }
 
     appliquerLangue();
     montrer(etat.commence ? 'parcours' : 'accueil');
