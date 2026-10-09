@@ -3,7 +3,7 @@
   "version": 1,
   "ouverture": {
     "_mode_emploi": "Mettez disponible à true le jour du lancement. Tant que c'est false, le jeu affiche « Bientôt disponible » (aperçu possible avec ?apercu=1).",
-    "disponible": false,
+    "disponible": true,
     "fr": {
       "badge": "Bientôt disponible",
       "titre": "Bientôt disponible !",
