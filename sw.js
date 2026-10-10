@@ -15,9 +15,9 @@ const DOSSIER = new URL('./', self.location).pathname;   // ex. /challenge-des-e
 const FICHIERS = [
   './',
   './style.css',
-  './style.css?v=5',
+  './style.css?v=6',
   './app.js',
-  './app.js?v=5',
+  './app.js?v=6',
   './zarlor.json',
   './logo-zarlor.png',
   './chewy.woff2',
