@@ -59,12 +59,25 @@
   /* ---------- Sauvegarde ---------- */
   const CLE_ETAT = 'zarlor_vivant_etat';
   const CLE_LANGUE = 'labyrinthe_lang';          // partagée avec la page d'accueil et le Challenge
-  const etatVide = () => ({ v: 1, trouvees: [], reponses: {}, score: null, scorePerime: false, commence: false });
+  const etatVide = () => ({ v: 2, trouvees: [], reponses: {}, score: null, scorePerime: false, commence: false });
   let etat = etatVide();
   function charger() {
     try {
       const brut = localStorage.getItem(CLE_ETAT);
-      if (brut) etat = Object.assign(etatVide(), JSON.parse(brut));
+      if (brut) {
+        const lu = JSON.parse(brut);
+        // Version 1 : anciens numéros des pancartes. On convertit les réponses déjà saisies
+        // vers la nouvelle numérotation (celle des pancartes du labyrinthe).
+        if (!lu.v || lu.v < 2) {
+          const M = { 1: 6, 2: 7, 3: 8, 4: 10, 5: 11, 6: 5, 7: 1, 8: 3, 9: 4, 10: 12, 11: 13, 12: 14, 13: 15, 14: 16, 15: 17, 16: 9, 17: 2 };
+          const rep = {};
+          Object.keys(lu.reponses || {}).forEach(k => { if (M[k]) rep[M[k]] = lu.reponses[k]; });
+          lu.reponses = rep;
+          lu.trouvees = (lu.trouvees || []).map(n => M[n]).filter(Boolean).sort((a, b) => a - b);
+          lu.v = 2;
+        }
+        etat = Object.assign(etatVide(), lu);
+      }
     } catch (e) { etat = etatVide(); }
   }
   function sauver() {
