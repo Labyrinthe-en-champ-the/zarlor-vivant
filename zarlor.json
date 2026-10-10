@@ -88,351 +88,6 @@
   "especes": [
     {
       "numero": 1,
-      "code": "ABT8",
-      "nom": "Bois de senteur blanc",
-      "nom_scientifique": "Ruizia cordata",
-      "pastille": "🔴",
-      "fr": {
-        "zot_te_kone": "Je suis un arbre porte-bonheur. Apparemment, même les arbres peuvent avoir une réputation.",
-        "habitat": "Forêt sèche / milieux secs de basse altitude",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "La tradition populaire raconte que je chante à midi et à minuit. Des pièces ont aussi été retrouvées au pied de certains individus sauvages, associées à des croyances de protection."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je suis adapté aux milieux secs. Mes feuilles adultes prennent une teinte argentée et mes fleurs sont rose saumon."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "En danger critique d'extinction (CR) et protégé. Le Parc national indique qu'il reste moins de dix individus originels à l'état naturel."
-          }
-        ],
-        "indice_kreol": "In' pié d'bwa ki shant minwit",
-        "indice": "L'arbre qui chante à midi et à minuit, autrefois associé à des porte-bonheur"
-      },
-      "en": {
-        "zot_te_kone": "I'm a lucky-charm tree. Apparently, even trees can have a reputation.",
-        "habitat": "Dry forest / dry lowland areas",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "Folk tradition says I sing at noon and at midnight. Coins have also been found at the foot of some wild trees, linked to beliefs about protection."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I'm adapted to dry environments. My adult leaves turn silvery and my flowers are salmon pink."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "Critically Endangered (CR) and protected. The National Park reports that fewer than ten original individuals remain in the wild."
-          }
-        ],
-        "indice_kreol": "In' pié d'bwa ki shant minwit",
-        "indice": "The tree that sings at noon and at midnight, once associated with good luck charms"
-      },
-      "reponses_codees": [
-        "Qm9pcyBkZSBzZW50ZXVyIGJsYW5j",
-        "UnVpemlhIGNvcmRhdGE="
-      ]
-    },
-    {
-      "numero": 2,
-      "code": "9UFF",
-      "nom": "Bois d'ortie",
-      "nom_scientifique": "Obetia ficifolia",
-      "pastille": "🟠",
-      "fr": {
-        "zot_te_kone": "Mon nom vous conseille gentiment de ne pas me faire un câlin.",
-        "habitat": "Forêt sèche / semi-sèche",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "Je peux provoquer la gratelle chez certaines personnes sensibles. Mon nom local n'est donc pas complètement décoratif."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je suis une espèce rare en milieu naturel, présente dans les Mascareignes, et associée aux forêts tropicales sèches ou semi-sèches de basse et moyenne altitude."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "En danger (EN) et protégée."
-          }
-        ],
-        "indice_kreol": "Attention la gratelle !",
-        "indice": "Un bois dont le nom vous conseille gentiment de ne pas lui faire un câlin"
-      },
-      "en": {
-        "zot_te_kone": "My name kindly advises you not to give me a hug. (“Bois d'ortie” means “nettle wood”.)",
-        "habitat": "Dry / semi-dry forest",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "I can cause an itchy rash (“gratelle”) in some sensitive people. So my local name isn't just for decoration."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I'm a rare species in the wild, found in the Mascarene Islands, in dry or semi-dry tropical forests at low and mid altitude."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "Endangered (EN) and protected."
-          }
-        ],
-        "indice_kreol": "Attention la gratelle !",
-        "indice": "A wood whose name kindly advises you not to give it a hug"
-      },
-      "reponses_codees": [
-        "Qm9pcyBkJ29ydGll",
-        "T2JldGlhIGZpY2lmb2xpYQ=="
-      ]
-    },
-    {
-      "numero": 3,
-      "code": "J2UY",
-      "nom": "Bois puant",
-      "nom_scientifique": "Foetidia mauritiana",
-      "pastille": "🔴",
-      "fr": {
-        "zot_te_kone": "Oui. Je m'appelle vraiment comme ça.",
-        "habitat": "Forêt semi-sèche / ravines / remparts",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "L'huile produite par mon bois lorsqu'il est coupé est malodorante. Pour une fois, le nom créole ne fait pas dans la poésie."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je peux atteindre 5 à 15 mètres et pousse notamment dans les vestiges de forêt semi-sèche, les ravines et les pentes de remparts."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "CR dans les documents de conservation du Parc national consultés ; l'espèce est protégée."
-          }
-        ],
-        "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
-        "indice": "Un arbre dont le bois libère une huile particulièrement odorante…"
-      },
-      "en": {
-        "zot_te_kone": "Yes. That really is my name. (“Bois puant” means “stinking wood”.)",
-        "habitat": "Semi-dry forest / ravines / cliffs",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "The oil my wood releases when it is cut smells bad. For once, the Creole name isn't trying to be poetic."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I can grow 5 to 15 metres tall, mainly in remnants of semi-dry forest, in ravines and on the slopes of the island's cliffs (“remparts”)."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "CR in the National Park conservation documents consulted; the species is protected."
-          }
-        ],
-        "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
-        "indice": "A tree whose wood releases a particularly smelly oil…"
-      },
-      "reponses_codees": [
-        "Qm9pcyBwdWFudA==",
-        "Rm9ldGlkaWEgbWF1cml0aWFuYQ=="
-      ]
-    },
-    {
-      "numero": 4,
-      "code": "NWS7",
-      "nom": "Bois de judas",
-      "nom_scientifique": "Cossinia pinnata",
-      "pastille": null,
-      "fr": {
-        "zot_te_kone": "On m'a accusé d'être quelqu'un d'autre. J'ai gardé le nom.",
-        "habitat": "Forêts / milieux indigènes",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "Autrefois, mon bois pouvait être substitué au Bois de fer parce que les deux se ressemblaient. Cette histoire a donné naissance à mon nom de « Bois de judas »."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je peux atteindre environ 15 mètres et mes fleurs blanches donnent des capsules contenant de petites graines. Je suis également une espèce mellifère."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "Pas de niveau de menace affiché ici sans validation d'une donnée actuelle suffisamment claire."
-          }
-        ],
-        "indice_kreol": "Trompeur comme un camarade",
-        "indice": "Un bois souvent vendu à la place de son voisin le Bois de fer"
-      },
-      "en": {
-        "zot_te_kone": "I was accused of being someone else. I kept the name.",
-        "habitat": "Native forests and habitats",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "In the past, my wood could be passed off as Bois de fer (“ironwood”) because the two looked alike. That story gave me my name, “Bois de judas” (“Judas wood”)."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I can reach about 15 metres. My white flowers produce capsules containing small seeds. I'm also a honey plant."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "No threat level shown here until clear, up-to-date data is confirmed."
-          }
-        ],
-        "indice_kreol": "Trompeur comme un camarade",
-        "indice": "A wood often sold in place of its neighbour, the Bois de fer"
-      },
-      "reponses_codees": [
-        "Qm9pcyBkZSBqdWRhcw==",
-        "Q29zc2luaWEgcGlubmF0YQ=="
-      ]
-    },
-    {
-      "numero": 5,
-      "code": "DJ65",
-      "nom": "Petit tamarin des Hauts",
-      "nom_scientifique": "Sophora denudata",
-      "pastille": null,
-      "fr": {
-        "zot_te_kone": "Je suis un arbre fontaine. Non, je ne suis pas équipé d'un robinet.",
-        "habitat": "Haute montagne / sophoraies",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "Mes feuilles peuvent capter l'humidité de la brume et du brouillard, qui se transforme en gouttelettes et profite ensuite au sol et à la végétation environnante."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je suis une espèce endémique de La Réunion associée aux milieux montagneux et aux sophoraies, notamment en altitude."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "En danger d'extinction selon les sources du Parc national et du MNHN consultées."
-          }
-        ],
-        "indice_kreol": "L'arbre fontaine des Hauts",
-        "indice": "Ses feuilles capturent la brume pour arroser le sol"
-      },
-      "en": {
-        "zot_te_kone": "I'm a fountain tree. No, I don't come with a tap.",
-        "habitat": "High mountains / Sophora woodland",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "My leaves can capture moisture from mist and fog, which turns into droplets that then benefit the soil and the surrounding plants."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I'm endemic to Réunion Island, found in mountain habitats and Sophora woodland (“sophoraies”), especially at high altitude."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "In danger of extinction according to the National Park and MNHN sources consulted."
-          }
-        ],
-        "indice_kreol": "L'arbre fontaine des Hauts",
-        "indice": "Its leaves capture the mist to water the soil"
-      },
-      "reponses_codees": [
-        "UGV0aXQgdGFtYXJpbiBkZXMgSGF1dHM=",
-        "UGV0aXQgdGFtYXJpbg==",
-        "U29waG9yYSBkZW51ZGF0YQ=="
-      ]
-    },
-    {
-      "numero": 6,
-      "code": "ETU5",
-      "nom": "Salangane des Mascareignes",
-      "nom_scientifique": "Aerodramus francicus",
-      "pastille": "🟡",
-      "fr": {
-        "zot_te_kone": "Me poser ? Je peux. Mais visiblement, j'ai mieux à faire.",
-        "habitat": "Cavernes / falaises / ravines, de la mer jusqu'aux Hauts",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "Je passe une grande partie de mon temps en vol, où je capture mes proies."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je niche en colonies dans des cavernes obscures, fissures, falaises ou parois de ravines. Mes nids sont fabriqués notamment avec des lichens et des mousses et collés à la paroi grâce à une substance produite dans ma salive."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "Vulnérable (VU) dans la Liste rouge française des oiseaux de La Réunion consultée."
-          }
-        ],
-        "indice_kreol": "Zirondèl ou Salangane ?",
-        "indice": "Un oiseau qui fabrique son nid dans les cavernes grâce à sa salive"
-      },
-      "en": {
-        "zot_te_kone": "Land? I could. But clearly, I have better things to do.",
-        "habitat": "Caves / cliffs / ravines, from the coast up to the highlands",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "I spend much of my time on the wing, catching my prey in flight."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I nest in colonies in dark caves, crevices, cliffs or ravine walls. My nests are made mainly of lichens and mosses, glued to the rock with a substance produced in my saliva."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "Vulnerable (VU) on the French Red List of Réunion birds consulted."
-          }
-        ],
-        "indice_kreol": "Zirondèl ou Salangane ?",
-        "indice": "A bird that builds its nest in caves using its saliva"
-      },
-      "reponses_codees": [
-        "U2FsYW5nYW5lIGRlcyBNYXNjYXJlaWduZXM=",
-        "U2FsYW5nYW5l",
-        "TWFzY2FyZW5lIHN3aWZ0bGV0",
-        "QWVyb2RyYW11cyBmcmFuY2ljdXM="
-      ]
-    },
-    {
-      "numero": 7,
       "code": "S7AX",
       "nom": "Gecko vert de Manapany",
       "nom_scientifique": "Phelsuma inexpectata",
@@ -491,7 +146,68 @@
       ]
     },
     {
-      "numero": 8,
+      "numero": 2,
+      "code": "G82D",
+      "nom": "Tuit-tuit, Échenilleur de La Réunion",
+      "nom_scientifique": "Lalage newtoni",
+      "pastille": "🔴",
+      "fr": {
+        "zot_te_kone": "Mon prénom fait « tuit-tuit ». Franchement, difficile de faire plus honnête.",
+        "habitat": "Forêts indigènes des Hauts",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "Le nom créole tuit-tuit vient du chant du mâle, composé de « tuit » répétés."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je suis insectivore et strictement lié aux forêts indigènes. Je ponds généralement deux œufs dans un petit nid en forme de coupe."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "En danger critique d'extinction (CR). Les rats et les chats représentent notamment une menace pour les œufs, les poussins et les adultes. Des opérations de dératisation sont menées pour protéger l'espèce."
+          }
+        ],
+        "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
+        "indice": "Un oiseau insectivore strictement lié aux forêts indigènes des Hauts"
+      },
+      "en": {
+        "zot_te_kone": "My name goes “tuit-tuit”. Honestly, it doesn't get more truthful than that.",
+        "habitat": "Native upland forests",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "The Creole name tuit-tuit comes from the male's song, made of repeated “tuit” notes."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I eat insects and live only in native forests. I usually lay two eggs in a small cup-shaped nest."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "Critically Endangered (CR). Rats and cats are a particular threat to eggs, chicks and adults. Rat control operations are carried out to protect the species."
+          }
+        ],
+        "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
+        "indice": "An insect-eating bird found only in the native upland forests"
+      },
+      "reponses_codees": [
+        "VHVpdC10dWl0LCDDiWNoZW5pbGxldXIgZGUgTGEgUsOpdW5pb24=",
+        "VHVpdC10dWl0",
+        "w4ljaGVuaWxsZXVyIGRlIExhIFLDqXVuaW9u",
+        "UsOpdW5pb24gY3Vja29vc2hyaWtl",
+        "TGFsYWdlIG5ld3Rvbmk=",
+        "VHVpdC10dWl0IMOJY2hlbmlsbGV1ciBkZSBMYSBSw6l1bmlvbg=="
+      ]
+    },
+    {
+      "numero": 3,
       "code": "HAVM",
       "nom": "Pétrel noir de Bourbon",
       "nom_scientifique": "Pseudobulweria aterrima",
@@ -550,7 +266,7 @@
       ]
     },
     {
-      "numero": 9,
+      "numero": 4,
       "code": "BGUB",
       "nom": "Pétrel de Barau, dit taille-vent",
       "nom_scientifique": "Pterodroma baraui",
@@ -612,7 +328,409 @@
       ]
     },
     {
+      "numero": 5,
+      "code": "ETU5",
+      "nom": "Salangane des Mascareignes",
+      "nom_scientifique": "Aerodramus francicus",
+      "pastille": "🟡",
+      "fr": {
+        "zot_te_kone": "Me poser ? Je peux. Mais visiblement, j'ai mieux à faire.",
+        "habitat": "Cavernes / falaises / ravines, de la mer jusqu'aux Hauts",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "Je passe une grande partie de mon temps en vol, où je capture mes proies."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je niche en colonies dans des cavernes obscures, fissures, falaises ou parois de ravines. Mes nids sont fabriqués notamment avec des lichens et des mousses et collés à la paroi grâce à une substance produite dans ma salive."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "Vulnérable (VU) dans la Liste rouge française des oiseaux de La Réunion consultée."
+          }
+        ],
+        "indice_kreol": "Zirondèl ou Salangane ?",
+        "indice": "Un oiseau qui fabrique son nid dans les cavernes grâce à sa salive"
+      },
+      "en": {
+        "zot_te_kone": "Land? I could. But clearly, I have better things to do.",
+        "habitat": "Caves / cliffs / ravines, from the coast up to the highlands",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "I spend much of my time on the wing, catching my prey in flight."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I nest in colonies in dark caves, crevices, cliffs or ravine walls. My nests are made mainly of lichens and mosses, glued to the rock with a substance produced in my saliva."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "Vulnerable (VU) on the French Red List of Réunion birds consulted."
+          }
+        ],
+        "indice_kreol": "Zirondèl ou Salangane ?",
+        "indice": "A bird that builds its nest in caves using its saliva"
+      },
+      "reponses_codees": [
+        "U2FsYW5nYW5lIGRlcyBNYXNjYXJlaWduZXM=",
+        "U2FsYW5nYW5l",
+        "TWFzY2FyZW5lIHN3aWZ0bGV0",
+        "QWVyb2RyYW11cyBmcmFuY2ljdXM="
+      ]
+    },
+    {
+      "numero": 6,
+      "code": "ABT8",
+      "nom": "Bois de senteur blanc",
+      "nom_scientifique": "Ruizia cordata",
+      "pastille": "🔴",
+      "fr": {
+        "zot_te_kone": "Je suis un arbre porte-bonheur. Apparemment, même les arbres peuvent avoir une réputation.",
+        "habitat": "Forêt sèche / milieux secs de basse altitude",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "La tradition populaire raconte que je chante à midi et à minuit. Des pièces ont aussi été retrouvées au pied de certains individus sauvages, associées à des croyances de protection."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je suis adapté aux milieux secs. Mes feuilles adultes prennent une teinte argentée et mes fleurs sont rose saumon."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "En danger critique d'extinction (CR) et protégé. Le Parc national indique qu'il reste moins de dix individus originels à l'état naturel."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa ki shant minwit",
+        "indice": "L'arbre qui chante à midi et à minuit, autrefois associé à des porte-bonheur"
+      },
+      "en": {
+        "zot_te_kone": "I'm a lucky-charm tree. Apparently, even trees can have a reputation.",
+        "habitat": "Dry forest / dry lowland areas",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "Folk tradition says I sing at noon and at midnight. Coins have also been found at the foot of some wild trees, linked to beliefs about protection."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I'm adapted to dry environments. My adult leaves turn silvery and my flowers are salmon pink."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "Critically Endangered (CR) and protected. The National Park reports that fewer than ten original individuals remain in the wild."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa ki shant minwit",
+        "indice": "The tree that sings at noon and at midnight, once associated with good luck charms"
+      },
+      "reponses_codees": [
+        "Qm9pcyBkZSBzZW50ZXVyIGJsYW5j",
+        "UnVpemlhIGNvcmRhdGE="
+      ]
+    },
+    {
+      "numero": 7,
+      "code": "9UFF",
+      "nom": "Bois d'ortie",
+      "nom_scientifique": "Obetia ficifolia",
+      "pastille": "🟠",
+      "fr": {
+        "zot_te_kone": "Mon nom vous conseille gentiment de ne pas me faire un câlin.",
+        "habitat": "Forêt sèche / semi-sèche",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "Je peux provoquer la gratelle chez certaines personnes sensibles. Mon nom local n'est donc pas complètement décoratif."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je suis une espèce rare en milieu naturel, présente dans les Mascareignes, et associée aux forêts tropicales sèches ou semi-sèches de basse et moyenne altitude."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "En danger (EN) et protégée."
+          }
+        ],
+        "indice_kreol": "Attention la gratelle !",
+        "indice": "Un bois dont le nom vous conseille gentiment de ne pas lui faire un câlin"
+      },
+      "en": {
+        "zot_te_kone": "My name kindly advises you not to give me a hug. (“Bois d'ortie” means “nettle wood”.)",
+        "habitat": "Dry / semi-dry forest",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "I can cause an itchy rash (“gratelle”) in some sensitive people. So my local name isn't just for decoration."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I'm a rare species in the wild, found in the Mascarene Islands, in dry or semi-dry tropical forests at low and mid altitude."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "Endangered (EN) and protected."
+          }
+        ],
+        "indice_kreol": "Attention la gratelle !",
+        "indice": "A wood whose name kindly advises you not to give it a hug"
+      },
+      "reponses_codees": [
+        "Qm9pcyBkJ29ydGll",
+        "T2JldGlhIGZpY2lmb2xpYQ=="
+      ]
+    },
+    {
+      "numero": 8,
+      "code": "J2UY",
+      "nom": "Bois puant",
+      "nom_scientifique": "Foetidia mauritiana",
+      "pastille": "🔴",
+      "fr": {
+        "zot_te_kone": "Oui. Je m'appelle vraiment comme ça.",
+        "habitat": "Forêt semi-sèche / ravines / remparts",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "L'huile produite par mon bois lorsqu'il est coupé est malodorante. Pour une fois, le nom créole ne fait pas dans la poésie."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je peux atteindre 5 à 15 mètres et pousse notamment dans les vestiges de forêt semi-sèche, les ravines et les pentes de remparts."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "CR dans les documents de conservation du Parc national consultés ; l'espèce est protégée."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
+        "indice": "Un arbre dont le bois libère une huile particulièrement odorante…"
+      },
+      "en": {
+        "zot_te_kone": "Yes. That really is my name. (“Bois puant” means “stinking wood”.)",
+        "habitat": "Semi-dry forest / ravines / cliffs",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "The oil my wood releases when it is cut smells bad. For once, the Creole name isn't trying to be poetic."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I can grow 5 to 15 metres tall, mainly in remnants of semi-dry forest, in ravines and on the slopes of the island's cliffs (“remparts”)."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "CR in the National Park conservation documents consulted; the species is protected."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
+        "indice": "A tree whose wood releases a particularly smelly oil…"
+      },
+      "reponses_codees": [
+        "Qm9pcyBwdWFudA==",
+        "Rm9ldGlkaWEgbWF1cml0aWFuYQ=="
+      ]
+    },
+    {
+      "numero": 9,
+      "code": "B2CB",
+      "nom": "Bois de fer",
+      "nom_scientifique": "Sideroxylon majus",
+      "pastille": null,
+      "fr": {
+        "zot_te_kone": "Mon nom vient de la solidité de mon bois. Et visiblement, ça m'a coûté cher.",
+        "habitat": "Forêts indigènes",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "J'ai tellement été recherché pour mon bois que je suis devenu rare. Et mon voisin, le Bois de judas, a parfois été vendu à ma place."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je peux atteindre 15 à 20 mètres. Mon bois était largement utilisé dans la construction."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "En danger d'extinction selon le document du Parc national consulté."
+          }
+        ],
+        "indice_kreol": "Le costaud recherché par les bâtisseurs",
+        "indice": "Arbre à l'extraordinaire solidité, devenu très rare"
+      },
+      "en": {
+        "zot_te_kone": "My name comes from how strong my wood is. And clearly, that cost me dearly. (“Bois de fer” means “ironwood”.)",
+        "habitat": "Native forests",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "I was so sought after for my wood that I became rare. And my neighbour, the Bois de judas, was sometimes sold in my place."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I can grow 15 to 20 metres tall. My wood was widely used in construction."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "In danger of extinction according to the National Park document consulted."
+          }
+        ],
+        "indice_kreol": "Le costaud recherché par les bâtisseurs",
+        "indice": "A tree of extraordinary strength that has become very rare"
+      },
+      "reponses_codees": [
+        "Qm9pcyBkZSBmZXI=",
+        "U2lkZXJveHlsb24gbWFqdXM="
+      ]
+    },
+    {
       "numero": 10,
+      "code": "NWS7",
+      "nom": "Bois de judas",
+      "nom_scientifique": "Cossinia pinnata",
+      "pastille": null,
+      "fr": {
+        "zot_te_kone": "On m'a accusé d'être quelqu'un d'autre. J'ai gardé le nom.",
+        "habitat": "Forêts / milieux indigènes",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "Autrefois, mon bois pouvait être substitué au Bois de fer parce que les deux se ressemblaient. Cette histoire a donné naissance à mon nom de « Bois de judas »."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je peux atteindre environ 15 mètres et mes fleurs blanches donnent des capsules contenant de petites graines. Je suis également une espèce mellifère."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "Pas de niveau de menace affiché ici sans validation d'une donnée actuelle suffisamment claire."
+          }
+        ],
+        "indice_kreol": "Trompeur comme un camarade",
+        "indice": "Un bois souvent vendu à la place de son voisin le Bois de fer"
+      },
+      "en": {
+        "zot_te_kone": "I was accused of being someone else. I kept the name.",
+        "habitat": "Native forests and habitats",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "In the past, my wood could be passed off as Bois de fer (“ironwood”) because the two looked alike. That story gave me my name, “Bois de judas” (“Judas wood”)."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I can reach about 15 metres. My white flowers produce capsules containing small seeds. I'm also a honey plant."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "No threat level shown here until clear, up-to-date data is confirmed."
+          }
+        ],
+        "indice_kreol": "Trompeur comme un camarade",
+        "indice": "A wood often sold in place of its neighbour, the Bois de fer"
+      },
+      "reponses_codees": [
+        "Qm9pcyBkZSBqdWRhcw==",
+        "Q29zc2luaWEgcGlubmF0YQ=="
+      ]
+    },
+    {
+      "numero": 11,
+      "code": "DJ65",
+      "nom": "Petit tamarin des Hauts",
+      "nom_scientifique": "Sophora denudata",
+      "pastille": null,
+      "fr": {
+        "zot_te_kone": "Je suis un arbre fontaine. Non, je ne suis pas équipé d'un robinet.",
+        "habitat": "Haute montagne / sophoraies",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Le détail qui étonne",
+            "texte": "Mes feuilles peuvent capter l'humidité de la brume et du brouillard, qui se transforme en gouttelettes et profite ensuite au sol et à la végétation environnante."
+          },
+          {
+            "type": "technique",
+            "titre": "Un peu plus technique",
+            "texte": "Je suis une espèce endémique de La Réunion associée aux milieux montagneux et aux sophoraies, notamment en altitude."
+          },
+          {
+            "type": "oeil",
+            "titre": "À garder à l'œil",
+            "texte": "En danger d'extinction selon les sources du Parc national et du MNHN consultées."
+          }
+        ],
+        "indice_kreol": "L'arbre fontaine des Hauts",
+        "indice": "Ses feuilles capturent la brume pour arroser le sol"
+      },
+      "en": {
+        "zot_te_kone": "I'm a fountain tree. No, I don't come with a tap.",
+        "habitat": "High mountains / Sophora woodland",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "The surprising detail",
+            "texte": "My leaves can capture moisture from mist and fog, which turns into droplets that then benefit the soil and the surrounding plants."
+          },
+          {
+            "type": "technique",
+            "titre": "A bit more technical",
+            "texte": "I'm endemic to Réunion Island, found in mountain habitats and Sophora woodland (“sophoraies”), especially at high altitude."
+          },
+          {
+            "type": "oeil",
+            "titre": "Keep an eye on",
+            "texte": "In danger of extinction according to the National Park and MNHN sources consulted."
+          }
+        ],
+        "indice_kreol": "L'arbre fontaine des Hauts",
+        "indice": "Its leaves capture the mist to water the soil"
+      },
+      "reponses_codees": [
+        "UGV0aXQgdGFtYXJpbiBkZXMgSGF1dHM=",
+        "UGV0aXQgdGFtYXJpbg==",
+        "U29waG9yYSBkZW51ZGF0YQ=="
+      ]
+    },
+    {
+      "numero": 12,
       "code": "H55N",
       "nom": "Baleine à bec de Blainville",
       "nom_scientifique": "Mesoplodon densirostris",
@@ -670,7 +788,7 @@
       ]
     },
     {
-      "numero": 11,
+      "numero": 13,
       "code": "DMZG",
       "nom": "Dauphin de Risso",
       "nom_scientifique": "Grampus griseus",
@@ -728,7 +846,7 @@
       ]
     },
     {
-      "numero": 12,
+      "numero": 14,
       "code": "9ARD",
       "nom": "Pois sabre",
       "nom_scientifique": "Canavalia gladiata",
@@ -787,7 +905,7 @@
       ]
     },
     {
-      "numero": 13,
+      "numero": 15,
       "code": "3D5D",
       "nom": "Conflore",
       "nom_scientifique": "Canna indica",
@@ -846,7 +964,7 @@
       ]
     },
     {
-      "numero": 14,
+      "numero": 16,
       "code": "Z5V2",
       "nom": "Girimbelle",
       "nom_scientifique": "Phyllanthus acidus",
@@ -906,7 +1024,7 @@
       ]
     },
     {
-      "numero": 15,
+      "numero": 17,
       "code": "CKWW",
       "nom": "Sapote noire",
       "nom_scientifique": "Diospyros digyna",
@@ -962,124 +1080,6 @@
         "U2Fwb3RpZXIgbm9pcg==",
         "QmxhY2sgc2Fwb3Rl",
         "RGlvc3B5cm9zIGRpZ3luYQ=="
-      ]
-    },
-    {
-      "numero": 16,
-      "code": "B2CB",
-      "nom": "Bois de fer",
-      "nom_scientifique": "Sideroxylon majus",
-      "pastille": null,
-      "fr": {
-        "zot_te_kone": "Mon nom vient de la solidité de mon bois. Et visiblement, ça m'a coûté cher.",
-        "habitat": "Forêts indigènes",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "J'ai tellement été recherché pour mon bois que je suis devenu rare. Et mon voisin, le Bois de judas, a parfois été vendu à ma place."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je peux atteindre 15 à 20 mètres. Mon bois était largement utilisé dans la construction."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "En danger d'extinction selon le document du Parc national consulté."
-          }
-        ],
-        "indice_kreol": "Le costaud recherché par les bâtisseurs",
-        "indice": "Arbre à l'extraordinaire solidité, devenu très rare"
-      },
-      "en": {
-        "zot_te_kone": "My name comes from how strong my wood is. And clearly, that cost me dearly. (“Bois de fer” means “ironwood”.)",
-        "habitat": "Native forests",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "I was so sought after for my wood that I became rare. And my neighbour, the Bois de judas, was sometimes sold in my place."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I can grow 15 to 20 metres tall. My wood was widely used in construction."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "In danger of extinction according to the National Park document consulted."
-          }
-        ],
-        "indice_kreol": "Le costaud recherché par les bâtisseurs",
-        "indice": "A tree of extraordinary strength that has become very rare"
-      },
-      "reponses_codees": [
-        "Qm9pcyBkZSBmZXI=",
-        "U2lkZXJveHlsb24gbWFqdXM="
-      ]
-    },
-    {
-      "numero": 17,
-      "code": "G82D",
-      "nom": "Tuit-tuit, Échenilleur de La Réunion",
-      "nom_scientifique": "Lalage newtoni",
-      "pastille": "🔴",
-      "fr": {
-        "zot_te_kone": "Mon prénom fait « tuit-tuit ». Franchement, difficile de faire plus honnête.",
-        "habitat": "Forêts indigènes des Hauts",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "Le détail qui étonne",
-            "texte": "Le nom créole tuit-tuit vient du chant du mâle, composé de « tuit » répétés."
-          },
-          {
-            "type": "technique",
-            "titre": "Un peu plus technique",
-            "texte": "Je suis insectivore et strictement lié aux forêts indigènes. Je ponds généralement deux œufs dans un petit nid en forme de coupe."
-          },
-          {
-            "type": "oeil",
-            "titre": "À garder à l'œil",
-            "texte": "En danger critique d'extinction (CR). Les rats et les chats représentent notamment une menace pour les œufs, les poussins et les adultes. Des opérations de dératisation sont menées pour protéger l'espèce."
-          }
-        ],
-        "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
-        "indice": "Un oiseau insectivore strictement lié aux forêts indigènes des Hauts"
-      },
-      "en": {
-        "zot_te_kone": "My name goes “tuit-tuit”. Honestly, it doesn't get more truthful than that.",
-        "habitat": "Native upland forests",
-        "rubriques": [
-          {
-            "type": "detail",
-            "titre": "The surprising detail",
-            "texte": "The Creole name tuit-tuit comes from the male's song, made of repeated “tuit” notes."
-          },
-          {
-            "type": "technique",
-            "titre": "A bit more technical",
-            "texte": "I eat insects and live only in native forests. I usually lay two eggs in a small cup-shaped nest."
-          },
-          {
-            "type": "oeil",
-            "titre": "Keep an eye on",
-            "texte": "Critically Endangered (CR). Rats and cats are a particular threat to eggs, chicks and adults. Rat control operations are carried out to protect the species."
-          }
-        ],
-        "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
-        "indice": "An insect-eating bird found only in the native upland forests"
-      },
-      "reponses_codees": [
-        "VHVpdC10dWl0LCDDiWNoZW5pbGxldXIgZGUgTGEgUsOpdW5pb24=",
-        "VHVpdC10dWl0",
-        "w4ljaGVuaWxsZXVyIGRlIExhIFLDqXVuaW9u",
-        "UsOpdW5pb24gY3Vja29vc2hyaWtl",
-        "TGFsYWdlIG5ld3Rvbmk=",
-        "VHVpdC10dWl0IMOJY2hlbmlsbGV1ciBkZSBMYSBSw6l1bmlvbg=="
       ]
     }
   ]
