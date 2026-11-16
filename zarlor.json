@@ -15,6 +15,12 @@
       "titre": "Coming soon!",
       "texte": "Le Zarlor Vivant will open its signs very soon. In the meantime, set off on an adventure with the Challenge des Experts!",
       "bouton": "Play the Challenge des Experts"
+    },
+    "de": {
+      "badge": "Demnächst verfügbar",
+      "titre": "Demnächst verfügbar!",
+      "texte": "Le Zarlor Vivant öffnet seine Schilder schon sehr bald. Begeben Sie sich bis dahin auf Abenteuer mit dem Challenge des Experts!",
+      "bouton": "Challenge des Experts spielen"
     }
   },
   "textes": {
@@ -83,6 +89,39 @@
         }
       ],
       "corrige": "Ask for the answer sheet at the reception desk 🌿"
+    },
+    "de": {
+      "titre": "Le Zarlor Vivant",
+      "intro": "„Zarlor“ bedeutet auf Réunion-Kreolisch „Schatz“: ein lebendiges Erbe aus seltenen Pflanzen und Tieren, das es auf der Insel zu bewahren gilt. Einst durchstreiften die großen Naturforscher La Réunion, um die Naturschätze der Insel zu erfassen. Heute sind Sie an der Reihe!",
+      "consigne": "Spazieren Sie durch das Labyrinth und finden Sie die 17 nummerierten Schilder, in beliebiger Reihenfolge. Tippen Sie an jedem Schild seine Nummer im Spiel an, lesen Sie den deutschen Steckbrief und finden Sie heraus, welche Art sich hinter dem Hinweis verbirgt.",
+      "commencer": "Erkundung starten",
+      "question": "Welche Art verbirgt sich hinter diesem Hinweis?",
+      "placeholder": "Namen der Art eingeben",
+      "enregistrer": "Antwort speichern",
+      "enregistre": "Antwort gespeichert ✓ Sie können sie bis zur Abgabe noch ändern.",
+      "felicitations": [
+        {
+          "min": 17,
+          "titre": "Alles richtig, bravo!",
+          "texte": "Ein echter Naturforscher von La Réunion: Der Zarlor hat keine Geheimnisse mehr vor Ihnen."
+        },
+        {
+          "min": 12,
+          "titre": "Großartige Erkundung!",
+          "texte": "Ihr Notizbuch ist fast vollständig. Der Zarlor ist bei Ihnen in guten Händen."
+        },
+        {
+          "min": 6,
+          "titre": "Schöne Runde!",
+          "texte": "Sie haben schon mehrere Geheimnisse des Zarlor gelüftet. Ein guter Grund, wiederzukommen und Ihr Notizbuch zu vervollständigen!"
+        },
+        {
+          "min": 0,
+          "titre": "Danke fürs Mitspielen!",
+          "texte": "Der Zarlor will verdient sein: Jedes gelesene Schild ist schon ein entdeckter Schatz."
+        }
+      ],
+      "corrige": "Die Lösungen erhalten Sie am Empfang 🌿"
     }
   },
   "especes": [
@@ -137,6 +176,29 @@
         ],
         "indice_kreol": "In' ti lézar vert i sa va disparaître",
         "indice": "A tiny green creature, endemic to the southern coast and highly threatened"
+      },
+      "de": {
+        "zot_te_kone": "Klein, grün, unauffällig … und verdammt kostbar.",
+        "habitat": "Küstengebiete im Süden",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Ich bin ein Gecko, der nur auf La Réunion vorkommt, und mein natürliches Verbreitungsgebiet ist äußerst klein. Studien haben gezeigt, dass meine Bestände durch Bebauung, Landwirtschaft und eingeführte Pflanzen stark zersplittert sind."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin ein tagaktiver Gecko der Küstengebiete im Süden der Insel. Mein Lebensraum ist stark geschrumpft, und auch eingeführte Arten können mir zu schaffen machen."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht (CR). Ein nationaler Aktionsplan ist dieser Art gewidmet."
+          }
+        ],
+        "indice_kreol": "In' ti lézar vert i sa va disparaître",
+        "indice": "Ein winziges, grünes Tier, endemisch an der Südküste und stark bedroht"
       },
       "reponses_codees": [
         "R2Vja28gdmVydCBkZSBNYW5hcGFueQ==",
@@ -196,6 +258,29 @@
         ],
         "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
         "indice": "An insect-eating bird found only in the native upland forests"
+      },
+      "de": {
+        "zot_te_kone": "Mein Name klingt wie „tuit-tuit“. Ehrlicher geht es wirklich nicht.",
+        "habitat": "Ursprüngliche Wälder des Hochlands",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Der kreolische Name Tuit-tuit stammt vom Gesang des Männchens, der aus wiederholten „tuit“-Rufen besteht."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich ernähre mich von Insekten und bin streng an die ursprünglichen Wälder gebunden. Meist lege ich zwei Eier in ein kleines, schalenförmiges Nest."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht (CR). Ratten und Katzen sind vor allem eine Gefahr für Eier, Küken und erwachsene Vögel. Zum Schutz der Art werden Rattenbekämpfungen durchgeführt."
+          }
+        ],
+        "indice_kreol": "Lécheniyèr ki fé tuit-tuit",
+        "indice": "Ein Insekten fressender Vogel, der nur in den ursprünglichen Wäldern des Hochlands lebt"
       },
       "reponses_codees": [
         "VHVpdC10dWl0LCDDiWNoZW5pbGxldXIgZGUgTGEgUsOpdW5pb24=",
@@ -258,6 +343,29 @@
         "indice_kreol": "Timize, le fantôme de la nuit",
         "indice": "A rare seabird whose night-time calls have fuelled local legends"
       },
+      "de": {
+        "zot_te_kone": "Man nennt mich „Timize“, wie das Fabelwesen aus der lokalen Sagenwelt – wegen meiner sehr seltsamen nächtlichen Rufe!",
+        "habitat": "Ozean + Landgebiete des Hochlands",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Ich bin so unauffällig, dass mein Nest in den Daten der SEOR nicht mit Sicherheit entdeckt wurde. Dennoch zeigen mehrere Hinweise, dass ich auf La Réunion brüte."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin ein Meeresvogel, der nur auf La Réunion vorkommt. Den Großteil meines Lebens verbringe ich auf tropischen und subtropischen Meeren und komme nur zum Brüten auf die Insel."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht (CR). Die DEAL (regionale Umweltbehörde) bezeichnet ihn als einen der seltensten Meeresvögel der Welt."
+          }
+        ],
+        "indice_kreol": "Timize, le fantôme de la nuit",
+        "indice": "Ein seltener Meeresvogel, dessen nächtliche Rufe lokale Legenden genährt haben"
+      },
       "reponses_codees": [
         "UMOpdHJlbCBub2lyIGRlIEJvdXJib24=",
         "UMOpdHJlbCBub2ly",
@@ -316,6 +424,29 @@
         ],
         "indice_kreol": "Le géant des montagnes",
         "indice": "A seabird that nests in burrows between 2,200 and 2,800 m above sea level"
+      },
+      "de": {
+        "zot_te_kone": "Ich bin ein Meeresvogel, der beschlossen hat, dass 2.500 Meter Höhe eine gute Adresse sind.",
+        "habitat": "Hochgebirge + Hochsee",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Meine Bruthöhlen können 60 cm bis 2 Meter lang sein. Und ich lege nur ein einziges Ei pro Jahr."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich suche meine Nahrung auf hoher See, brüte aber auf La Réunion, zwischen 2.200 und 2.800 m Höhe."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Stark gefährdet (EN). Lichtverschmutzung und eingeführte Raubtiere gehören zu den belegten Bedrohungen."
+          }
+        ],
+        "indice_kreol": "Le géant des montagnes",
+        "indice": "Ein Meeresvogel, der zwischen 2.200 und 2.800 m Höhe in Erdhöhlen brütet"
       },
       "reponses_codees": [
         "UMOpdHJlbCBkZSBCYXJhdSwgZGl0IHRhaWxsZS12ZW50",
@@ -379,6 +510,29 @@
         "indice_kreol": "Zirondèl ou Salangane ?",
         "indice": "A bird that builds its nest in caves using its saliva"
       },
+      "de": {
+        "zot_te_kone": "Landen? Kann ich. Aber offensichtlich habe ich Besseres zu tun.",
+        "habitat": "Höhlen / Klippen / Schluchten, vom Meer bis ins Hochland",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Ich verbringe einen großen Teil meiner Zeit in der Luft, wo ich auch meine Beute fange."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich brüte in Kolonien in dunklen Höhlen, Spalten, Klippen oder Schluchtwänden. Meine Nester baue ich unter anderem aus Flechten und Moosen und klebe sie mit einer Substanz aus meinem Speichel an die Wand."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Gefährdet (VU) laut der eingesehenen französischen Roten Liste der Vögel von La Réunion."
+          }
+        ],
+        "indice_kreol": "Zirondèl ou Salangane ?",
+        "indice": "Ein Vogel, der sein Nest mithilfe seines Speichels in Höhlen baut"
+      },
       "reponses_codees": [
         "U2FsYW5nYW5lIGRlcyBNYXNjYXJlaWduZXM=",
         "U2FsYW5nYW5l",
@@ -438,6 +592,29 @@
         "indice_kreol": "In' pié d'bwa ki shant minwit",
         "indice": "The tree that sings at noon and at midnight, once associated with good luck charms"
       },
+      "de": {
+        "zot_te_kone": "Ich bin ein Glücksbaum. Offenbar können auch Bäume einen Ruf haben.",
+        "habitat": "Trockenwald / trockene Tieflagen",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Der Volksglaube erzählt, dass ich mittags und um Mitternacht singe. Am Fuß einiger wilder Exemplare wurden zudem Münzen gefunden, die mit Schutzbräuchen in Verbindung stehen."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin an trockene Lebensräume angepasst. Meine ausgewachsenen Blätter nehmen einen silbrigen Farbton an, und meine Blüten sind lachsrosa."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht (CR) und geschützt. Laut Nationalpark gibt es in freier Natur weniger als zehn ursprüngliche Exemplare."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa ki shant minwit",
+        "indice": "Der Baum, der mittags und um Mitternacht singt, früher mit Glücksbringern verbunden"
+      },
       "reponses_codees": [
         "Qm9pcyBkZSBzZW50ZXVyIGJsYW5j",
         "UnVpemlhIGNvcmRhdGE="
@@ -494,6 +671,29 @@
         ],
         "indice_kreol": "Attention la gratelle !",
         "indice": "A wood whose name kindly advises you not to give it a hug"
+      },
+      "de": {
+        "zot_te_kone": "Mein Name („Bois d'ortie“ heißt Brennnesselholz) rät Ihnen freundlich davon ab, mich zu umarmen.",
+        "habitat": "Trockenwald / halbtrockener Wald",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Bei manchen empfindlichen Menschen kann ich Juckreiz auslösen (auf Kreolisch „la gratelle“). Mein lokaler Name ist also nicht nur Dekoration."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin in freier Natur selten, komme auf den Maskarenen vor und wachse in tropischen Trocken- oder Halbtrockenwäldern der unteren und mittleren Höhenlagen."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Stark gefährdet (EN) und geschützt."
+          }
+        ],
+        "indice_kreol": "Attention la gratelle !",
+        "indice": "Ein Baum, dessen Name („Brennnesselholz“) Ihnen freundlich davon abrät, es zu umarmen"
       },
       "reponses_codees": [
         "Qm9pcyBkJ29ydGll",
@@ -552,6 +752,29 @@
         "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
         "indice": "A tree whose wood releases a particularly smelly oil…"
       },
+      "de": {
+        "zot_te_kone": "Ja. Ich heiße wirklich so. (Mein Name bedeutet „Stinkholz“.)",
+        "habitat": "Halbtrockener Wald / Schluchten / Steilwände",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Das Öl, das mein Holz beim Schneiden absondert, riecht übel. Ausnahmsweise ist der kreolische Name einmal nicht poetisch."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich werde 5 bis 15 Meter hoch und wachse vor allem in den Resten des halbtrockenen Waldes, in Schluchten und an den Hängen der Steilwände."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "CR in den eingesehenen Schutzdokumenten des Nationalparks; die Art ist geschützt."
+          }
+        ],
+        "indice_kreol": "In' pié d'bwa i saïgne pa, mé li san pa bon",
+        "indice": "Ein Baum, dessen Holz ein besonders streng riechendes Öl absondert …"
+      },
       "reponses_codees": [
         "Qm9pcyBwdWFudA==",
         "Rm9ldGlkaWEgbWF1cml0aWFuYQ=="
@@ -608,6 +831,29 @@
         ],
         "indice_kreol": "Le costaud recherché par les bâtisseurs",
         "indice": "A tree of extraordinary strength that has become very rare"
+      },
+      "de": {
+        "zot_te_kone": "Mein Name („Bois de fer“ heißt Eisenholz) kommt von der Härte meines Holzes. Und das ist mir offenbar teuer zu stehen gekommen.",
+        "habitat": "Ursprüngliche Wälder",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Mein Holz war so begehrt, dass ich selten geworden bin. Und mein Nachbar, das Bois de judas, wurde manchmal an meiner Stelle verkauft."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich kann 15 bis 20 Meter hoch werden. Mein Holz wurde häufig im Bau verwendet."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht laut dem eingesehenen Dokument des Nationalparks."
+          }
+        ],
+        "indice_kreol": "Le costaud recherché par les bâtisseurs",
+        "indice": "Ein Baum von außergewöhnlicher Härte, der sehr selten geworden ist"
       },
       "reponses_codees": [
         "Qm9pcyBkZSBmZXI=",
@@ -666,6 +912,29 @@
         "indice_kreol": "Trompeur comme un camarade",
         "indice": "A wood often sold in place of its neighbour, the Bois de fer"
       },
+      "de": {
+        "zot_te_kone": "Man hat mir vorgeworfen, jemand anderes zu sein. Den Namen habe ich behalten.",
+        "habitat": "Wälder / ursprüngliche Lebensräume",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Früher wurde mein Holz manchmal anstelle des Bois de fer verkauft, weil sich beide ähnelten. Daher stammt mein Name „Bois de judas“ (Judasholz)."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich werde etwa 15 Meter hoch, und aus meinen weißen Blüten entstehen Kapseln mit kleinen Samen. Außerdem bin ich eine Bienenweide."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Hier wird keine Gefährdungsstufe angezeigt, solange keine ausreichend klaren aktuellen Daten bestätigt sind."
+          }
+        ],
+        "indice_kreol": "Trompeur comme un camarade",
+        "indice": "Ein Holz, das oft anstelle seines Nachbarn, des Bois de fer, verkauft wurde"
+      },
       "reponses_codees": [
         "Qm9pcyBkZSBqdWRhcw==",
         "Q29zc2luaWEgcGlubmF0YQ=="
@@ -722,6 +991,29 @@
         ],
         "indice_kreol": "L'arbre fontaine des Hauts",
         "indice": "Its leaves capture the mist to water the soil"
+      },
+      "de": {
+        "zot_te_kone": "Ich bin ein Brunnenbaum. Nein, ich habe keinen Wasserhahn.",
+        "habitat": "Hochgebirge / Sophora-Wälder",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Meine Blätter können die Feuchtigkeit aus Dunst und Nebel einfangen. Sie verwandelt sich in Tröpfchen, die dann dem Boden und den umliegenden Pflanzen zugutekommen."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin eine Art, die nur auf La Réunion vorkommt, und wachse in Gebirgslagen und Sophora-Wäldern, vor allem in der Höhe."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Vom Aussterben bedroht laut den eingesehenen Quellen des Nationalparks und des MNHN."
+          }
+        ],
+        "indice_kreol": "L'arbre fontaine des Hauts",
+        "indice": "Seine Blätter fangen den Nebel ein, um den Boden zu bewässern"
       },
       "reponses_codees": [
         "UGV0aXQgdGFtYXJpbiBkZXMgSGF1dHM=",
@@ -781,10 +1073,34 @@
         "indice_kreol": "In' nez bizar é dé gross den",
         "indice": "A deep-sea cetacean able to dive down to 1,000 m"
       },
+      "de": {
+        "zot_te_kone": "Meine Nase ist seltsam. Und bei den Männchen ist das noch nicht alles.",
+        "habitat": "Tiefe Gewässer des offenen Ozeans",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Die Männchen haben große Zähne, die aus dem Unterkiefer herausragen, und tragen oft Narben von Kämpfen mit anderen Männchen."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin etwa 4,3 bis 4,8 m lang und kann bis zu etwa 1.000 m tief tauchen. Ich ernähre mich vor allem von Kalmaren, Kraken und Fischen."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Unzureichende Datenlage, auf La Réunion wie weltweit, laut Globice."
+          }
+        ],
+        "indice_kreol": "In' nez bizar é dé gross den",
+        "indice": "Ein Wal der Tiefsee, der bis zu 1.000 m tief tauchen kann"
+      },
       "reponses_codees": [
         "QmFsZWluZSDDoCBiZWMgZGUgQmxhaW52aWxsZQ==",
         "QmxhaW52aWxsZSdzIGJlYWtlZCB3aGFsZQ==",
-        "TWVzb3Bsb2RvbiBkZW5zaXJvc3RyaXM="
+        "TWVzb3Bsb2RvbiBkZW5zaXJvc3RyaXM=",
+        "QmxhaW52aWxsZS1TY2huYWJlbHdhbA=="
       ]
     },
     {
@@ -839,10 +1155,34 @@
         "indice_kreol": "Le corps rempli de cicatrices",
         "indice": "The older this dolphin gets, the more its body bears the marks of its life"
       },
+      "de": {
+        "zot_te_kone": "Je älter ich werde, desto mehr sehe ich aus, als hätte ich drei Leben gelebt.",
+        "habitat": "Ozean",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Erwachsene Tiere können zahlreiche Narben und helle Markierungen am Körper tragen."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin ein Delfin, der in den Gewässern von La Réunion beobachtet wird. Die lokalen Daten sind begrenzt: Der SINP-Atlas von La Réunion verzeichnet Beobachtungen der Art, und Globice hat sie bei jüngsten Erhebungen erneut nachgewiesen."
+          },
+          {
+            "type": "oeil",
+            "titre": "Im Auge behalten",
+            "texte": "Hier wird kein Schutzstatus angezeigt, solange keine ausreichend sicheren und aktuellen lokalen Daten vorliegen."
+          }
+        ],
+        "indice_kreol": "Le corps rempli de cicatrices",
+        "indice": "Je älter dieser Delfin wird, desto mehr trägt sein Körper die Spuren seines Lebens"
+      },
       "reponses_codees": [
         "RGF1cGhpbiBkZSBSaXNzbw==",
         "Umlzc28ncyBkb2xwaGlu",
-        "R3JhbXB1cyBncmlzZXVz"
+        "R3JhbXB1cyBncmlzZXVz",
+        "UnVuZGtvcGZkZWxmaW4="
       ]
     },
     {
@@ -897,11 +1237,35 @@
         "indice_kreol": "In' poi arme blanche",
         "indice": "A climbing heritage (“lontan”) vegetable whose pod can reach 40 cm"
       },
+      "de": {
+        "zot_te_kone": "Ich bin eine Erbse. Aber offensichtlich habe ich mir eine Klinge als Kostüm ausgesucht.",
+        "habitat": "Felder / Gärten / landwirtschaftliche Flächen",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Meine Hülse kann 20 bis 40 cm lang werden, und ihre Form erklärt meinen Namen „Pois sabre“ (Säbelerbse)."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin eine Kletterpflanze aus der Familie der Hülsenfrüchtler. Die Pois sabre gehört zu den „Lontan“-Gemüsesorten (traditionelle Sorten von früher), die zum Erhalt des réunionesischen Gemüseerbes erfasst wurden."
+          },
+          {
+            "type": "cuisine",
+            "titre": "In der Küche",
+            "texte": "Ihre riesigen Hülsen verbergen dicke Bohnen. Auf der Insel werden die unreifen Hülsen und Samen traditionell als Fricassée zubereitet, ähnlich wie grüne Bohnen. Wichtiger Hinweis: Die reifen Samen enthalten natürliche Stoffe, die entfernt werden müssen. Deshalb verwendet man Hülsen und Bohnen immer nur, solange sie noch sehr jung, grün und zart sind."
+          }
+        ],
+        "indice_kreol": "In' poi arme blanche",
+        "indice": "Ein kletterndes „Lontan“-Gemüse, dessen Hülse bis zu 40 cm lang werden kann"
+      },
       "reponses_codees": [
         "UG9pcyBzYWJyZQ==",
         "UG9pcyBkZSBzYWJyZQ==",
         "U3dvcmQgYmVhbg==",
-        "Q2FuYXZhbGlhIGdsYWRpYXRh"
+        "Q2FuYXZhbGlhIGdsYWRpYXRh",
+        "U2Nod2VydGJvaG5l"
       ]
     },
     {
@@ -956,11 +1320,35 @@
         "indice_kreol": "La belle fleur aux racines nourricières",
         "indice": "An ornamental plant whose rhizomes produce an edible starch"
       },
+      "de": {
+        "zot_te_kone": "Man kennt mich eher als Zierpflanze. Dabei habe ich auch Generationen ernährt.",
+        "habitat": "Felder / Gärten",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Aus meinen Wurzelstöcken lässt sich eine Stärke gewinnen, die unter anderem in der Ernährung verwendet wird."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Auf La Réunion heißt Canna indica „Conflore“ und gehört zu den offiziell erfassten „Lontan“-Gemüsesorten der réunionesischen Landwirtschaft."
+          },
+          {
+            "type": "cuisine",
+            "titre": "In der Küche",
+            "texte": "Früher, „lontan“, diente diese Wurzel als Schweinefutter und galt als Essen der Armen. Unter diesem Ruf leidet der Conflore bis heute. Aber wir versichern Ihnen: Gut zubereitet ist der Conflore köstlich. Guten Appetit!"
+          }
+        ],
+        "indice_kreol": "La belle fleur aux racines nourricières",
+        "indice": "Eine Zierpflanze, deren Wurzelstöcke eine essbare Stärke liefern"
+      },
       "reponses_codees": [
         "Q29uZmxvcmU=",
         "Q2FubmE=",
         "SW5kaWFuIHNob3Q=",
-        "Q2FubmEgaW5kaWNh"
+        "Q2FubmEgaW5kaWNh",
+        "SW5kaXNjaGVzIEJsdW1lbnJvaHI="
       ]
     },
     {
@@ -1015,12 +1403,36 @@
         "indice_kreol": "La petite bille très acide",
         "indice": "A small heritage (“lontan”) fruit also called “bilimbi rond” or “chérimbellier”"
       },
+      "de": {
+        "zot_te_kone": "Ich sehe aus wie eine kleine Murmel. Aber was die Säure angeht, verstehe ich keinen Spaß.",
+        "habitat": "Gärten / Obstgärten",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Auf La Réunion trage ich auch Namen wie „Bilimbi rond“ oder „Chérimbellier“."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin eine kleine Frucht, die in Gärten und städtischen Grünflächen wächst. Ich stamme aus dem tropischen Asien und komme auf den Maskarenen vor."
+          },
+          {
+            "type": "cuisine",
+            "titre": "In der Küche",
+            "texte": "Sie ist eine sehr saure kleine Frucht. Traditionell wird sie vor allem auf drei Arten zubereitet: als Konfitüre (oder kandierte Früchte), um ihre Säure zu mildern, als scharfe Soße zu einem Cari und natürlich im Rum (in Maßen)!"
+          }
+        ],
+        "indice_kreol": "La petite bille très acide",
+        "indice": "Eine kleine „Lontan“-Frucht, auch „Bilimbi rond“ oder „Chérimbellier“ genannt"
+      },
       "reponses_codees": [
         "R2lyaW1iZWxsZQ==",
         "QmlsaW1iaSByb25k",
         "Q2jDqXJpbWJlbGxpZXI=",
         "T3RhaGVpdGUgZ29vc2ViZXJyeQ==",
-        "UGh5bGxhbnRodXMgYWNpZHVz"
+        "UGh5bGxhbnRodXMgYWNpZHVz",
+        "U3Rlcm5zdGFjaGVsYmVlcmU="
       ]
     },
     {
@@ -1075,11 +1487,35 @@
         "indice_kreol": "Tomate verte dehors, chocolat dedans",
         "indice": "A cultivated fruit whose flesh turns brown and soft when ripe"
       },
+      "de": {
+        "zot_te_kone": "Von außen sehe ich eher aus wie eine grüne Tomate. Von innen … Überraschung.",
+        "habitat": "Obstgärten / Gärten / Anbauflächen",
+        "rubriques": [
+          {
+            "type": "detail",
+            "titre": "Das überraschende Detail",
+            "texte": "Reif wird mein Fruchtfleisch braunschwarz und sehr weich, was einige meiner réunionesischen Spitznamen erklärt."
+          },
+          {
+            "type": "technique",
+            "titre": "Etwas technischer",
+            "texte": "Ich bin eine fremde Art, die auf La Réunion angebaut wird. Laut CBNM (Botanisches Konservatorium der Maskarenen) komme ich vor allem im Osten vor und gelte als Kulturpflanze, die nur stellenweise verwildert ist."
+          },
+          {
+            "type": "cuisine",
+            "titre": "In der Küche",
+            "texte": "Wegen ihres Aussehens im sehr reifen Zustand wird sie vor Ort manchmal „caca poule“ („Hühnerkacke“) genannt – eine faszinierende Frucht. So kommt diese Frucht von der Insel am besten zur Geltung: als schnelles traditionelles Rezept, Sapote-Creme oder -Kompott, als Smoothie für etwas Originelles oder ganz einfach mit dem Löffel …"
+          }
+        ],
+        "indice_kreol": "Tomate verte dehors, chocolat dedans",
+        "indice": "Eine Kulturfrucht, deren Fruchtfleisch bei Reife braun und weich wird"
+      },
       "reponses_codees": [
         "U2Fwb3RlIG5vaXJl",
         "U2Fwb3RpZXIgbm9pcg==",
         "QmxhY2sgc2Fwb3Rl",
-        "RGlvc3B5cm9zIGRpZ3luYQ=="
+        "RGlvc3B5cm9zIGRpZ3luYQ==",
+        "U2Nod2FyemUgU2Fwb3Rl"
       ]
     }
   ]
