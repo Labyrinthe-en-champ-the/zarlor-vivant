@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2E5A27">
   <title>Le Zarlor Vivant – Labyrinthe En Champ-Thé</title>
   <link rel="icon" href="logo-zarlor.png">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -18,7 +18,11 @@
     <div class="entete-actions">
       <a class="pastille-btn" id="lien-tous" href="/home/" aria-label="Tous les jeux">🏠</a>
       <a class="pastille-btn pastille-texte" id="lien-challenge" href="/challenge-des-experts/">🎯 <span data-i="challenge">Challenge</span></a>
-      <button class="pastille-btn pastille-texte" type="button" id="btn-langue">EN 🇬🇧</button>
+      <select class="pastille-btn pastille-texte choix-langue" id="btn-langue" aria-label="Langue">
+        <option value="fr" lang="fr">🇫🇷 FR</option>
+        <option value="en" lang="en">🇬🇧 EN</option>
+        <option value="de" lang="de">🇩🇪 DE</option>
+      </select>
     </div>
   </header>
 
@@ -137,6 +141,6 @@
     </button>
   </nav>
 
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>
