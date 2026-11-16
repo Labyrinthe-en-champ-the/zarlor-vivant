@@ -25,7 +25,8 @@
       confirmer_manque: n => `Il vous reste ${n} question${n > 1 ? 's' : ''} sans réponse. Valider quand même ?`,
       confirmer_nouvelle: 'Effacer toute votre progression et recommencer une nouvelle partie ?',
       erreur_donnees: 'Le jeu n\u2019a pas pu se charger. Vérifiez votre connexion puis rechargez la page.',
-      lang_btn: 'EN 🇬🇧', lang_aria: 'Switch to English'
+      zot_sous_titre: '',
+      lang_aria: 'Langue'
     },
     en: {
       challenge: 'Challenge', tous_jeux: 'All games',
@@ -44,9 +45,31 @@
       confirmer_manque: n => `You still have ${n} unanswered question${n > 1 ? 's' : ''}. Submit anyway?`,
       confirmer_nouvelle: 'Erase all your progress and start a new game?',
       erreur_donnees: 'The game could not load. Check your connection and reload the page.',
-      lang_btn: 'FR 🇫🇷', lang_aria: 'Passer en français'
+      zot_sous_titre: 'Did you know?',
+      lang_aria: 'Language'
+    },
+    de: {
+      challenge: 'Challenge', tous_jeux: 'Alle Spiele',
+      mes_pancartes: 'Meine 17 Schilder', trouvees: 'Schilder gelesen', repondues: 'beantwortet',
+      suivante: 'Nächstes Schild',
+      a_decouvrir: 'Noch zu finden', repondu: '✓ Beantwortet', a_repondre: 'Zu beantworten',
+      lire_pancarte: n => `Lesen Sie Schild Nr. ${n} aufmerksam.`,
+      pancarte_n: 'Schild Nr. ', retour: 'Meine Schilder', habitat: 'Mein Lebensraum', indice: 'Der Hinweis',
+      resultat: 'Mein Ergebnis', valider: 'Antworten abgeben', revalider: 'Antworten erneut abgeben',
+      modifier: 'Antworten ändern', nouvelle: 'Neues Spiel',
+      aide_resultat: 'Geben Sie ab, wann Sie möchten: Sie sehen dann Ihre Punktzahl von 17 und können Ihre Antworten noch ändern und erneut abgeben.',
+      score_perime: 'Sie haben seitdem Antworten geändert: Geben Sie erneut ab, um Ihre Punktzahl zu aktualisieren.',
+      nav_parcours: 'Rundgang', nav_resultat: 'Ergebnis',
+      oui: 'Ja', annuler: 'Abbrechen',
+      reponse_vide: 'Geben Sie zuerst den Namen einer Art ein.',
+      confirmer_manque: n => `${n} Frage${n > 1 ? 'n sind' : ' ist'} noch unbeantwortet. Trotzdem abgeben?`,
+      confirmer_nouvelle: 'Ihren gesamten Fortschritt löschen und ein neues Spiel beginnen?',
+      erreur_donnees: 'Das Spiel konnte nicht geladen werden. Prüfen Sie Ihre Verbindung und laden Sie die Seite neu.',
+      zot_sous_titre: 'Wussten Sie schon?',
+      lang_aria: 'Sprache'
     }
   };
+  const LANGUES = ['fr', 'en', 'de'];
 
   /* ---------- Icônes des rubriques ---------- */
   const ICONES = {
@@ -87,12 +110,14 @@
   /* ---------- Langue ---------- */
   function langueDepart() {
     const p = new URLSearchParams(location.search).get('lang');
-    if (p === 'fr' || p === 'en') return p;
+    if (LANGUES.includes(p)) return p;
     try {
       const m = localStorage.getItem(CLE_LANGUE);
-      if (m === 'fr' || m === 'en') return m;
+      if (LANGUES.includes(m)) return m;
     } catch (e) {}
-    return (navigator.language || 'fr').toLowerCase().startsWith('en') ? 'en' : 'fr';
+    const nav = (navigator.language || 'fr').toLowerCase();
+    if (nav.startsWith('de')) return 'de';
+    return nav.startsWith('en') ? 'en' : 'fr';
   }
   let langue = langueDepart();
   try { localStorage.setItem(CLE_LANGUE, langue); } catch (e) {}
@@ -107,10 +132,10 @@
   function normaliser(s) {
     return String(s || '')
       .toLowerCase()
-      .replace(/œ/g, 'oe').replace(/æ/g, 'ae')
+      .replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ß/g, 'ss')
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-z0-9]+/g, ' ')
-      .replace(/^(le|la|les|l|un|une|the|a|an) /, '')
+      .replace(/^(le|la|les|l|un|une|the|a|an|der|die|das|ein|eine) /, '')
       .replace(/ /g, '');
   }
   function distance(a, b) {
@@ -216,13 +241,14 @@
     }
     const d = e[langue];
     $('fiche-numero').textContent = t('pancarte_n') + e.numero;
-    // La fiche (texte de la pancarte) n'est affichée qu'en anglais :
+    // La fiche (texte de la pancarte) est affichée traduite en anglais et en allemand :
     // en français, le joueur lit directement la pancarte dans le labyrinthe.
-    const ficheVisible = langue === 'en';
+    const ficheVisible = langue !== 'fr';
     document.querySelector('.fiche').hidden = !ficheVisible;
     $('fiche-aide').hidden = ficheVisible;
     $('fiche-aide').textContent = t('lire_pancarte')(e.numero);
-    $('fiche-zot-sous-titre').hidden = langue !== 'en';
+    $('fiche-zot-sous-titre').textContent = t('zot_sous_titre');
+    $('fiche-zot-sous-titre').hidden = !t('zot_sous_titre');
     $('fiche-zot').textContent = d.zot_te_kone;
     $('fiche-habitat').textContent = d.habitat;
     $('fiche-sci').textContent = e.nom_scientifique;
@@ -273,7 +299,7 @@
         if (typeof v === 'string') el.textContent = v;
       });
     }
-    $('btn-langue').textContent = t('lang_btn');
+    $('btn-langue').value = langue;
     $('btn-langue').setAttribute('aria-label', t('lang_aria'));
     $('lien-tous').setAttribute('aria-label', t('tous_jeux'));
     $('lien-tous').href = '/home/?lang=' + langue;
@@ -301,8 +327,8 @@
 
   /* ---------- Événements ---------- */
   function brancher() {
-    $('btn-langue').addEventListener('click', () => {
-      langue = langue === 'fr' ? 'en' : 'fr';
+    $('btn-langue').addEventListener('change', () => {
+      langue = LANGUES.includes($('btn-langue').value) ? $('btn-langue').value : 'fr';
       try { localStorage.setItem(CLE_LANGUE, langue); } catch (e) {}
       appliquerLangue();
     });
@@ -359,8 +385,8 @@
       <p class="accueil-consigne">${echapper(o.texte)}</p>
       <a class="btn btn-principal" style="text-decoration:none" href="/challenge-des-experts/?lang=${langue}">🎯 ${echapper(o.bouton)}</a>
     </div></section>`;
-    // Le bouton FR/EN reste utilisable
-    $('btn-langue').onclick = () => setTimeout(afficherBientot, 0);
+    // Le choix de langue reste utilisable
+    $('btn-langue').onchange = () => setTimeout(afficherBientot, 0);
   }
 
   /* ---------- Démarrage ---------- */
